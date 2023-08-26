@@ -1,0 +1,28 @@
+{
+  "name": "escpos-printer-simulator",
+  "version": "0.0.1",
+  "description": "Simulates an ESCPOS printer",
+  "main": "dist/index.js",
+  "files": [
+    "./dist/*",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "ts-node --swc -T example.ts",
+    "build": "swc --delete-dir-on-start src -d dist && cd src && tsc --emitDeclarationOnly"
+  },
+  "keywords": [
+    "ESCPOS"
+  ],
+  "author": "Jantje19",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.68",
+    "@types/node": "^20.4.1",
+    "ts-node": "^10.9.1"
+  }
+}
